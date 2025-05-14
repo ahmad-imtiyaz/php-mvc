@@ -10,6 +10,9 @@ class App
         $url = $this->parseUrl();
 
         // Controller
+        // if (is_null($url)) {
+        //     $url[0] = $this->controller;
+        // }
         if (file_exists('../app/controllers/' . $url[0] . '.php')) {
             $this->controller = $url[0];
             unset($url[0]);
@@ -43,5 +46,9 @@ class App
             $url = explode('/', $url);
             return $url;
         }
+        // else {
+        //     $url = [$this->controller];
+        //     return $url;
+        // }
     }
 }
