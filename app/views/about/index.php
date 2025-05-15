@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <h1>my index</h1>
-    <p>Ini adalah halaman index.</p>
+    <h1>About Me</h1>
+    <p>Halo,nama saya <?= $data['nama'] ?>.umur saya <?= $data['umur'] ?> tahun , saya adalah seorang <?= $data['pekerjaan'] ?></p>
 </body>
 
 </html>
